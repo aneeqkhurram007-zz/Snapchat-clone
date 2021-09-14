@@ -17,7 +17,7 @@ const WebcamCapture = () => {
         dispatch({
 
             type: "SET_CAMERA_IMAGE",
-            payload: "https://i.picsum.photos/id/265/200/300.jpg?hmac=NX0ut-ylHFyYKa4TxhZFNElh-h6RcVV7P4PNPgeBxKk"
+            payload: imageSrc
 
         })
         router.push('/preview')
