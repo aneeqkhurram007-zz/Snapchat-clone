@@ -27,7 +27,7 @@ const Chats = () => {
     return (
         <div className="chats">
             <header className="chats__header">
-                <Avatar src={user.profilePic} onClick={() => {
+                <Avatar src={user?.profilePic} onClick={() => {
                     signOut(auth)
                     router.replace('/')
                 }} className="chats__avatar" />
