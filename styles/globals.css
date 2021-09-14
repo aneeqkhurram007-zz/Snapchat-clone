@@ -4,6 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefc01;
+  height: 100vh;
 }
 
 a {
@@ -13,4 +20,177 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.webcamCapture {
+  position: relative;
+}
+.webcamCapture__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: white;
+}
+.screen {
+  border: 1px solid black;
+}
+.preview {
+  position: relative;
+}
+.preview__close {
+  position: absolute;
+  top: 0;
+  margin: 5px;
+  cursor: pointer;
+  color: black;
+}
+.preview__toolbarRight {
+  color: black;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.preview__toolbarRight > .MuiSvgIcon-root {
+  font-size: 20px !important;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.perview__footer {
+  background-color: yellow;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30px;
+  padding: 7px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  transform: translate(-50%, -50%);
+}
+.perview__footer > h2 {
+  margin-right: 3px;
+  font-size: 8px;
+}
+.preview__sendIcon {
+  font-size: 10px !important;
+}
+.chats {
+  position: relative;
+  height: 400px;
+  width: 300px;
+}
+.chats__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto 10px;
+  background-color: #059ee0;
+  height: 50px;
+}
+.chats__avatar {
+  height: 25px !important;
+  width: 25px !important;
+}
+.chats__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 8px;
+}
+.chats__search > input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  flex: 1;
+  color: #fff;
+}
+.chats__search > input::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+.chats__posts {
+  margin-top: -9px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: scroll;
+  box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
+  height: 359px;
+  background-color: white;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+}
+.chat__avatar {
+  height: 35px !important;
+  width: 35px !important;
+}
+.chat:hover {
+  opacity: 0.8;
+}
+.chat__readIcon {
+  color: #ed3b55;
+}
+.chat__info {
+  padding-left: 5px;
+  flex: 1;
+}
+.chat__info > h4 {
+  font-size: 11px;
+  font-weight: 500;
+}
+.chat__info > p {
+  font-size: 9px;
+}
+.chatView {
+  position: relative;
+}
+.chatView > img {
+  cursor: pointer;
+}
+.chatView__timer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+.login {
+  background-color: #feff00;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.login__container {
+  display: flex;
+  flex-direction: column;
+}
+.login__container > img {
+  height: 300px;
+  object-fit: contain;
+}
+.chats__takePicIcon {
+  position: absolute;
+  background-color: white;
+  border-radius: 200px;
+  color: gray;
+  font-size: 40px !important;
+  cursor: pointer;
+  bottom: 0;
+  left: 50%;
+  translate: transform(-50%, -50%);
+}
+.chats__takePicIcon:hover {
+  opacity: 0.8;
 }
